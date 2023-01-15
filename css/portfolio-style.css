@@ -1,0 +1,53 @@
+body {
+
+  background-color: #a3b5b4;
+
+}
+
+.gh-avatar {
+  background-color: #8cb7b4;
+}
+
+.gh-details {
+  background-color: #a3b5b4;
+}
+
+header {
+
+  margin-top: 15px;
+}
+
+.style-card {
+
+  background-color: #8cb7b4;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+h2 {
+
+  color: #929897;
+}
+
+/*   background-color: #20B2AA; */
+
+.bg-photo-border {
+
+  border-color: #8cb7b4;
+  border-width: 0.5rem;
+}
+
+.h-150 {
+
+  height: 30rem;
+}
+
+
+.topContainer {
+
+  margin-top: 5px;
+  position: relative;
+  background-color: #8cb7b4;
+  margin-block: 1rem;
+  padding: 1rem;
+}

@@ -1,0 +1,475 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Rajdeep Hundal's Portfolio </title>
+  <meta name="keywords" content="portfolio">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="./css/portfolio-style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container h-150 p-5 bg-light border rounded-3" id="jumbotron-slide">
+      <div class="row row-content align-items-center">
+        <div class="col-6 col-sm-12">
+          <div class="media">
+            <div class="media-body align-self-center">
+              <h2> Rajdeep Hundal </h2>
+              <p class="d-none d-sm-block"> Rajdeep's Portfolio </p>
+              <!--    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#projectShowcase" aria-expanded="true" aria-controls="projectShowcase"> My Projects
+                Showcase </button> 
+              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#CodePentab" data-parent="#myGroupButtons" aria-expanded="false"
+                aria-controls="CodePentab"> CodePen </button>-->
+              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#abouttab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="abouttab">
+                About Me </button>
+              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#githubtab" data-parent="#myGroupButtons" aria-expanded="false"
+                aria-controls="githubtab"> GitHub </button>
+              <button class="btn btn-outline-secondary" id="btnAccordian" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionExample" aria-expanded="false" data-parent="#myGroupButtons"
+                aria-controls="accordionExample"> Resume
+              </button>
+              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#phototab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="abouttab">
+                Photo </button>
+              <!--       <img class="rounded float-end d-flex img-thumbnail mt-3 p-2 bg-photo-border ghAvatar" width="200"
+                height="auto" src=`${data.avatar_url}` alt="My my-photo thumbnail" />  -->
+              <div id="githubAvatar">
+                <!-- placeholder / dont delete this section-->
+              </div>
+            </div>
+
+            <div style="min-height: 90px;">
+              <div id="abouttab" class="collapse collapse-horizontal mt-4" data-bs-parent="#jumbotron-slide">
+                <div class="card card-body" style="width: 500px; height: auto;">
+                  I enjoy programming. I love art. And I love animals too. I am currently enrolled in
+                  FastTrack Java Developer program with Cook Systems. I am also currently enrolled in a MERN Stack
+                  bootcamp with Nucamp.
+                  I have worked in the E-Learning and Gaming industries before. My favorite games which I developed were
+                  Nicky's Pie Parlor and Hungry Snail. I am very excited to be learning new skills and hope to
+                  contribute towards the growth of an organization in the near future.
+                </div>
+              </div>
+
+              <div style="min-height: 90px;">
+                <div id="phototab" class="collapse collapse-horizontal mt-3" data-bs-parent="#jumbotron-slide">
+                  <div class="card card-body float-start mr-4" style="width: 250px; height: auto;">
+
+                    <img class="rounded d-flex img-thumbnail mt-1 p-1" width="240px" height="auto" src="img/b4.jpg"
+                      alt="my-photo thumbnail" />
+                  </div>
+                </div>
+                <!--
+            <div style="min-height: 90px;">
+              <div id="projectShowcase" class="collapse collapse-horizontal mt-4" data-bs-parent="#jumbotron-slide">
+                <div class="card card-body" style="width: 300px; height: auto;">
+                  I enjoy programming. I love art.
+                </div>
+              </div>
+
+              <div style="min-height: 120px;">
+                <div id="CodePentab" class="collapse collapse-horizontal mt-3" data-bs-parent="#jumbotron-slide">
+                  <div class="card card-body" style="width: 300px; height: auto;">
+                    CodePen stuff
+                  </div>
+                </div>
+                -->
+
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal mt-3" id="githubtab" data-bs-parent="#jumbotron-slide">
+                    <div class="card card-body" id="github" style="width: 300px; height: auto;">
+                      <p><a href="https://github.com/rhundal">View my GitHub Profile</a></p>
+                    </div>
+                    <div id="gitProjects" data-parent="#githubtab" aria-expanded="false" aria-controls="githubtab">
+                      <button class="btn btn-outline-secondary mt-3 ml-5" data-bs-toggle="collapse"
+                        data-bs-target="#githubProInnerTab" id="btn-Git-Pro" type="button"> GitHub
+                        Projects & FastTrack Assignments/Assessments</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </header>
+
+  <div class="container">
+
+    <div class="row collapse mt-4 mb-4 bg-light border rounded-3" id="githubProInnerTab" aria-expanded="false"
+      data-bs-parent="#gitProjects">
+
+      <div class="accordionA mt-3">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingA">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFirst" aria-expanded="true" aria-controls="collapseFirst">
+              React Project - Nucamp (In Progress)
+            </button>
+          </h2>
+          <div id="collapseFirst" class="accordion-collapse collapse show" aria-labelledby="headingA"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong>This is the react version of the nucamp site for Nucamp bootcamp. </strong> Built the UI using
+              Reactstrap for incorporating bootstrap UI classes, functional react components and
+              useState to change state of components dynamically.
+              <br />
+              <br />
+              Link - <a href="https://github.com/rhundal/nucamp-react"> View on Github </a>
+              Link - <a href="https://github.com/rhundal/nucamp-react"> Live </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordionB mt-3">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingB">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSecond" aria-expanded="true" aria-controls="collapseSecond">
+              i-heart-React
+            </button>
+          </h2>
+          <div id="collapseSecond" class="accordion-collapse collapse show" aria-labelledby="headingB"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> An intro to React </strong> project where I learned to render an array of heart components being
+              fetched from an array of hearts using map function.
+              <br />
+              <br />
+              Link - <a href="https://github.com/rhundal/i-heart-react"> View on Github </a>
+              Link - <a href="https://github.com/rhundal/nucamp-react"> Live </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingC">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThird" aria-expanded="true" aria-controls="collapseThird">
+              FastTrack Spring Assessment - Social Media
+            </button>
+          </h2>
+          <div id="collapseThird" class="accordion-collapse collapse show" aria-labelledby="headingC"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Social Media - Twitter Like RESTful API Implementation - </strong> This project was to implement
+              a webservice running with Spring boot, JPA and PostgreSQL to perform CRUD operations for a Twitter like
+              social media application. Used Onion Architecture to address issues of Separation of concerns and tight
+              coupling by dividing the architecture into 3 layers.
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingD">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFourth" aria-expanded="true" aria-controls="collapseFourth">
+              FastTrack Assignment - Fibonacci and Fizzbuzz
+            </button>
+          </h2>
+          <div id="collapseFourth" class="accordion-collapse collapse show" aria-labelledby="headingD"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Fibonacci and Fizzbuzz </strong>
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingE">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFifth" aria-expanded="true" aria-controls="collapseFifth">
+              FastTrack Assignment - Rationals
+            </button>
+          </h2>
+          <div id="collapseFifth" class="accordion-collapse collapse show" aria-labelledby="headingE"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Rationals </strong>
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingF">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSixth" aria-expanded="true" aria-controls="collapseSixth">
+              FastTrack Assignment - Schema Design
+            </button>
+          </h2>
+          <div id="collapseSixth" class="accordion-collapse collapse show" aria-labelledby="headingF"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Schema Design </strong>
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingG">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeventh" aria-expanded="true" aria-controls="collapseSeventh">
+              FastTrack Assignment - Collections
+            </button>
+          </h2>
+          <div id="collapseSeventh" class="accordion-collapse collapse show" aria-labelledby="headingG"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Collections </strong>
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingH">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEighth" aria-expanded="true" aria-controls="collapseEighth">
+              FastTrack Assignment - Quiz API (Spring)
+            </button>
+          </h2>
+          <div id="collapseEighth" class="accordion-collapse collapse show" aria-labelledby="headingH"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Quiz API (Spring) </strong>
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingH">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNinth" aria-expanded="true" aria-controls="collapseNinth">
+              FastTrack Assignment - Primer (JavaScript)
+            </button>
+          </h2>
+          <div id="collapseNinth" class="accordion-collapse collapse show" aria-labelledby="headingH"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Primer (JavaScript) </strong>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingI">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTenth" aria-expanded="true" aria-controls="collapseTenth">
+              FastTrack Assignment - Declarative (JavaScript)
+            </button>
+          </h2>
+          <div id="collapseTenth" class="accordion-collapse collapse show" aria-labelledby="headingI"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Declarative (JavaScript) </strong>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordionC mt-3 mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJ">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEleventh" aria-expanded="true" aria-controls="collapseEleventh">
+              FastTrack Assignment - Quizler (JavaScript)
+            </button>
+          </h2>
+          <div id="collapseEleventh" class="accordion-collapse collapse show" aria-labelledby="headingJ"
+            data-bs-parent="#gitProjects">
+            <div class="accordion-body mt-2">
+              <strong> Description of Quizler (JavaScript) </strong>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Resume -->
+    <div class="row collapse mt-3 mb-4" id="accordionExample" data-bs-parent="#jumbotron-slide">
+      <div class="accordion1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              My Resume
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              <a href="https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/view"
+                download="proposed_file_name">Download</a>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body mb-2">
+
+
+              <iframe src="https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/preview" width="640"
+                height="480" allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="btn btn-outline-secondary collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+              custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="btn btn-outline-secondary collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+              custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+
+      $(document).ready(function () {
+
+
+        $("#jumbotron-slide").hide();
+        $("#jumbotron-slide").show(1450);
+
+        $("#btnAccordian").click(function () {
+
+          $("#accordionExample").slideDown(1450, 1000);
+
+        });
+
+        $("#btn-Git-Pro").click(function () {
+
+          $("#githubProInnerTab").show();
+
+        });
+
+      });
+
+      let github = document.querySelector('#github');
+      let githubAvatar = document.querySelector('#githubAvatar');
+
+      function render(data) {
+        github.innerHTML =
+          `<div class="gh-details">
+							<p>
+								<strong>${data.name}</strong><br>
+								${data.location}<br>
+								<em><a href="https://github.com/rhundal?tab=repositories">${data.public_repos} Public Repositories</a></em><br>
+                <i>Bio ~ </i>${data.bio}
+                <!--<em><a href="${data.url}">${data.public_repos} Public Repositories</a></em> -->
+							</p>
+						</div>
+					</div>`;
+
+        githubAvatar.innerHTML =
+          `
+            <div class="rounded float-end d-flex img-thumbnail mt-3 p-2 bg-photo-border ghAvatar">
+							<p><img width="200"
+                height="auto" alt="My my-photo thumbnail" src="${data.avatar_url}"></p>
+						</div>
+          `;
+
+      }
+
+      // Call the GitHub API
+      fetch('https://api.github.com/users/rhundal').then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+        throw response;
+      }).then(function (data) {
+        console.log(data);
+        render(data);
+      }).catch(function (error) {
+        console.warn(error);
+      });
+
+    </script>
+
+</body>
+
+</html>

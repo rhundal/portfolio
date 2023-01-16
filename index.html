@@ -41,9 +41,9 @@
                 data-bs-target="#accordionExample" aria-expanded="false" data-parent="#myGroupButtons"
                 aria-controls="accordionExample"> Resume
               </button>
-              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#phototab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="abouttab">
-                Photo </button>
+              <!-- <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#phototab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="phototab"> 
+                Photo </button> -->
               <!--       <img class="rounded float-end d-flex img-thumbnail mt-3 p-2 bg-photo-border ghAvatar" width="200"
                 height="auto" src=`${data.avatar_url}` alt="My my-photo thumbnail" />  -->
               <div id="githubAvatar">
@@ -347,9 +347,10 @@
             data-bs-parent="#accordionExample">
             <div class="accordion-body mb-2">
 
-
+              <!-- https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/preview-->
               <iframe src="https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/preview" width="640"
                 height="480" allow="autoplay"></iframe>
+
             </div>
           </div>
         </div>
@@ -439,7 +440,8 @@
 								<strong>${data.name}</strong><br>
 								${data.location}<br>
 								<em><a href="https://github.com/rhundal?tab=repositories">${data.public_repos} Public Repositories</a></em><br>
-                <i>Bio ~ </i>${data.bio}
+                <i>Bio ~ </i>${data.bio}<br>
+                ${data.followers} <i>followers</i> . ${data.following} <i>following</i><br>
                 <!--<em><a href="${data.url}">${data.public_repos} Public Repositories</a></em> -->
 							</p>
 						</div>

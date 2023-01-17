@@ -18,19 +18,14 @@
 
   <header>
 
-    <div class="container h-150 p-5 bg-light border rounded-3" id="jumbotron-slide">
+    <div class="container h-150 p-5 bg-light border rounded-3 adjustHeight" id="jumbotron-slide">
       <div class="row row-content align-items-center">
-        <div class="col-6 col-sm-12">
+        <div class="col-12 col-sm-12">
           <div class="media">
+
             <div class="media-body align-self-center">
               <h2> Rajdeep Hundal </h2>
               <p class="d-none d-sm-block"> Rajdeep's Portfolio </p>
-              <!--    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#projectShowcase" aria-expanded="true" aria-controls="projectShowcase"> My Projects
-                Showcase </button> 
-              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#CodePentab" data-parent="#myGroupButtons" aria-expanded="false"
-                aria-controls="CodePentab"> CodePen </button>-->
               <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#abouttab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="abouttab">
                 About Me </button>
@@ -41,11 +36,8 @@
                 data-bs-target="#accordionExample" aria-expanded="false" data-parent="#myGroupButtons"
                 aria-controls="accordionExample"> Resume
               </button>
-              <!-- <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#phototab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="phototab"> 
-                Photo </button> -->
-              <!--       <img class="rounded float-end d-flex img-thumbnail mt-3 p-2 bg-photo-border ghAvatar" width="200"
-                height="auto" src=`${data.avatar_url}` alt="My my-photo thumbnail" />  -->
+
+
               <div id="githubAvatar">
                 <!-- placeholder / dont delete this section-->
               </div>
@@ -53,57 +45,37 @@
 
             <div style="min-height: 90px;">
               <div id="abouttab" class="collapse collapse-horizontal mt-4" data-bs-parent="#jumbotron-slide">
-                <div class="card card-body" style="width: 500px; height: auto;">
-                  I enjoy programming. I love art. And I love animals too. I am currently enrolled in
-                  FastTrack Java Developer program with Cook Systems. I am also currently enrolled in a MERN Stack
-                  bootcamp with Nucamp.
-                  I have worked in the E-Learning and Gaming industries before. My favorite games which I developed were
-                  Nicky's Pie Parlor and Hungry Snail. I am very excited to be learning new skills and hope to
-                  contribute towards the growth of an organization in the near future.
+                <div class="card card-body mt-2" style="min-width: 400px; max-width: 600px; height: auto;">
+                  I enjoy programming and love art. I love animals too, mainly dogs. I am currently enrolled in the
+                  FastTrack Java Developer program with Cook Systems. I have worked in the E-Learning and Gaming
+                  industries before. My favorite games which I developed were Nicky's Pie Parlor and Hungry Snail.
+                  I am very excited to be learning new skills and hope to contribute towards the growth of an
+                  organization in the near future.
                 </div>
               </div>
 
-              <!---->
               <div style="min-height: 90px;">
-                <div id="phototab" class="collapse collapse-horizontal mt-3" data-bs-parent="#jumbotron-slide">
-                  <div class="card card-body float-start mr-4" style="width: 250px; height: auto;">
-
-                    <img class="rounded d-flex img-thumbnail mt-1 p-1" width="240px" height="auto" src="img/b4.jpg"
-                      alt="my-photo thumbnail" />
-                  </div>
-                </div>
-                <!--
-            <div style="min-height: 90px;">
-              <div id="projectShowcase" class="collapse collapse-horizontal mt-4" data-bs-parent="#jumbotron-slide">
-                <div class="card card-body" style="width: 300px; height: auto;">
-                  I enjoy programming. I love art.
-                </div>
-              </div>
-
-              <div style="min-height: 120px;">
-                <div id="CodePentab" class="collapse collapse-horizontal mt-3" data-bs-parent="#jumbotron-slide">
-                  <div class="card card-body" style="width: 300px; height: auto;">
-                    CodePen stuff
-                  </div>
-                </div>
-                -->
-
                 <div style="min-height: 120px;">
-                  <div class="collapse collapse-horizontal mt-3" id="githubtab" data-bs-parent="#jumbotron-slide">
-                    <div class="card card-body" id="github" style="width: 300px; height: auto;">
-                      <p><a href="https://github.com/rhundal">View my GitHub Profile</a></p>
-                    </div>
-                    <div id="gitProjects" data-parent="#githubtab" aria-expanded="false" aria-controls="githubtab">
-                      <button class="btn btn-outline-secondary mt-3 ml-5" data-bs-toggle="collapse"
-                        data-bs-target="#githubProInnerTab" id="btn-Git-Pro" type="button"> GitHub
-                        Projects & FastTrack Assignments/Assessments</button>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal mt-3" id="githubtab" data-bs-parent="#jumbotron-slide">
+                      <div class="card card-body" id="github" style="width: 300px; height: auto;">
+                        <p><a href="https://github.com/rhundal">View my GitHub Profile</a></p>
+                      </div>
+                      <div id="gitProjects" data-parent="#githubtab" aria-expanded="false" aria-controls="githubtab">
+                        <button class="btn btn-outline-secondary mt-3 ml-5" data-bs-toggle="collapse"
+                          data-bs-target="#githubProInnerTab" id="btn-Git-Pro" type="button"> GitHub
+                          Projects & FastTrack Assignments/Assessments</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+      </div>
+    </div>
   </header>
 
   <div class="container">
@@ -341,64 +313,19 @@
             </button>
             <button class="btn btn-outline-secondary" type="button">
               <a href="https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/view"
-                download="proposed_file_name">Download</a>
+                download="proposed_file_name" target=”_blank”>Download</a>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body mb-2">
 
-              <!-- https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/preview-->
-              <iframe src="https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/preview" width="640"
-                height="480" allow="autoplay"></iframe>
+              <iframe src="https://drive.google.com/file/d/1oLmvWSDuypbUeRIoOBu-omOz_l1TTj2h/preview"
+                class="col-12 col-sm-12" width="660" height="400" allow="autoplay"></iframe>
 
             </div>
           </div>
         </div>
-        <!--
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="btn btn-outline-secondary collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the
-              overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-              custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-              the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="btn btn-outline-secondary collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the
-              overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-              custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-              the
-              <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        -->
       </div>
     </div>
 
@@ -450,7 +377,7 @@
 
         githubAvatar.innerHTML =
           `
-            <div class="rounded float-end d-flex img-thumbnail mt-3 p-2 bg-photo-border ghAvatar">
+            <div class="rounded float-start float-sm-end d-flex img-fluid img-thumbnail mt-3 mb-3 p-2 bg-photo-border ghAvatar">
 							<p><img width="200"
                 height="auto" alt="My my-photo thumbnail" src="${data.avatar_url}"></p>
 						</div>

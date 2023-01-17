@@ -51,3 +51,20 @@ h2 {
   margin-block: 1rem;
   padding: 1rem;
 }
+
+.adjustHeight {
+
+  resize: horizontal;
+  height: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#adjustWidth {
+
+  width: auto;
+}

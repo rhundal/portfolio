@@ -24,7 +24,7 @@
           <div class="media">
 
             <div class="media-body align-self-center">
-              <h2> Rajdeep Hundal </h2>
+              <h2 class="h2Animate"> Rajdeep Hundal </h2>
               <p class="d-none d-sm-block"> Rajdeep's Portfolio </p>
               <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#abouttab" data-parent="#myGroupButtons" aria-expanded="false" aria-controls="abouttab">
@@ -82,7 +82,7 @@
 
     <div class="row collapse mt-4 mb-4 bg-light border rounded-3" id="githubProInnerTab" aria-expanded="false"
       data-bs-parent="#gitProjects">
-
+      <!--
       <div class="accordionA mt-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingA">
@@ -102,11 +102,11 @@
               Link - <a href="https://github.com/rhundal/nucamp-react"> View on Github </a>
               Link - <a href="https://github.com/rhundal/nucamp-react"> Live </a>
 
-
             </div>
           </div>
         </div>
       </div>
+      -->
       <div class="accordionB mt-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingB">
@@ -117,19 +117,20 @@
           </h2>
           <div id="collapseSecond" class="accordion-collapse collapse show" aria-labelledby="headingB"
             data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> An intro to React </strong> project where I learned to render an array of heart components being
-              fetched from an array of hearts using map function.
+            <div class="accordion-body mt-2 mb-4">
+              <strong> An intro to React </strong> project where I render multiple heart components
+              (hearts of different colors) by fetching from an array of hearts using map function.
               <br />
-              <br />
-              Link - <a href="https://github.com/rhundal/i-heart-react"> View on Github </a>
-              Link - <a href="https://github.com/rhundal/nucamp-react"> Live </a>
+              <ul>
+                <li> Environment - React 18.2.0, NPM 8.19.3, Node 18.13.0 </li>
+              </ul>
+              Link - <a href="https://github.com/rhundal/i-heart-react"> View on Github </a> <br />
 
             </div>
           </div>
         </div>
       </div>
-      <div class="accordionC mt-3 mb-4">
+      <div class="accordionC mt-3 mb-2">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingC">
             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
@@ -139,18 +140,27 @@
           </h2>
           <div id="collapseThird" class="accordion-collapse collapse show" aria-labelledby="headingC"
             data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
+            <div class="accordion-body mt-3">
               <strong> Social Media - Twitter Like RESTful API Implementation - </strong> This project was to implement
               a webservice running with Spring boot, JPA and PostgreSQL to perform CRUD operations for a Twitter like
               social media application. Used Onion Architecture to address issues of Separation of concerns and tight
               coupling by dividing the architecture into 3 layers.
-              <br />
+              <br /> <br />
+
+              <ul>
+                <li> Implemented a RESTful API running with Spring boot to perform CRUD operations for a
+                  Twitter like social media application with 30 endpoints </li>
+                <li> Used JPA to generate database schema (classes) for PostgreSQL using PgAdmin in
+                  collaboration with other developers </li>
+                <li> Tested, troubleshot and debugged API functionality to meet the project requirements
+                  using Postman </li>
+              </ul>
 
             </div>
           </div>
         </div>
       </div>
-
+      <!--
       <div class="accordionC mt-3 mb-4">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingD">
@@ -225,7 +235,7 @@
           </div>
         </div>
       </div>
-
+    -->
 
       <div class="accordionC mt-3 mb-4">
         <div class="accordion-item">
@@ -238,14 +248,17 @@
           <div id="collapseEighth" class="accordion-collapse collapse show" aria-labelledby="headingH"
             data-bs-parent="#gitProjects">
             <div class="accordion-body mt-2">
-              <strong> Description of Quiz API (Spring) </strong>
+              <strong> Implementing a small RESTful API </strong> that simulates basic backend functionality for a quiz
+              application. Implemented 6 endpoints to perform CRUD operations
+              for the application using JPA to generate db classes, spring boot and 3 layer architecture to address
+              separation of concern issues.
               <br />
 
             </div>
           </div>
         </div>
       </div>
-
+      <!--
       <div class="accordionC mt-3 mb-4">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingH">
@@ -299,7 +312,7 @@
           </div>
         </div>
       </div>
-
+-->
     </div>
 
     <!-- Resume -->

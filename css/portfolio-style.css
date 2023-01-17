@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+
 body {
 
   background-color: #a3b5b4;
@@ -27,6 +29,22 @@ header {
 h2 {
 
   color: #929897;
+}
+
+.h2Animate {
+
+  border-radius: 50%;
+  border: none;
+  color: #309992;
+  font-weight: 500;
+  line-height: 1;
+
+  transition: transform 250ms;
+
+}
+
+.h2Animate:hover {
+  transform: translateY(-10px);
 }
 
 /*   background-color: #20B2AA; */

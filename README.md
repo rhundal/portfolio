@@ -1,3 +1,3 @@
 # portfolio
 My Portfolio
-~ Developed using HTML5, CSS3, JavaScript and Bootstrap 
+~ Developed using JavaScript and Bootstrap 

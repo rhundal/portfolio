@@ -37,44 +37,37 @@
                 aria-controls="accordionExample"> Resume
               </button>
 
-
-              <div id="githubAvatar">
-                <!-- placeholder / dont delete this section-->
-              </div>
             </div>
+
+            <div id="githubAvatar">
+              <!-- placeholder / dont delete this section-->
+            </div>
+
 
 
             <!--<div style="min-height: 90px;"> -->
-            <div id="abouttab" class="collapse collapse-horizontal mt-4" data-bs-parent="#jumbotron-slide">
-              <div class="card card-body col-sm-6" style="min-width: 300px; height: auto;">
+            <div id="abouttab" class="collapse collapse-vertical mt-4" data-bs-parent="#jumbotron-slide">
+              <div class="card card-body col-4 float-start" style="min-width: 300px; height: auto;   background-color: whitesmoke; border-color: white;
+                border-width: 0.5rem;">
                 <!--style="min-width: 320px; max-width: 700px; height: auto;" max-width: 600px;-->
-                Hello! Welcome to my portfolio. I am currently learning new technologies. I have worked in the
-                E-Learning,
-                Gaming and Health industries before. I have been a part of both waterfall and agile project settings and
-                my favorite leadership style is servant-leadership. I beleive it gives people a chance to tap into their
-                potential, grow and make a contribution. I am very excited to be learning new skills and hope to
-                contribute
-                towards the growth of an organization in the future.
+                An enthusiastic and determined full-stack developer, I am a recent graduate of FastTrack Java
+                Developer program with Cook Systems. I bring 5+ years IT experience from working in the e-learning
+                and gaming industries.
               </div>
             </div>
 
-            <div style="min-height: 90px;">
-              <div style="min-height: 120px;">
-                <div style="min-height: 120px;">
-                  <div class="collapse collapse-horizontal mt-3" id="githubtab" data-bs-parent="#jumbotron-slide">
-                    <div class="card card-body" id="github" style="width: 300px; height: auto;">
-                      <p><a href="https://github.com/rhundal">View my GitHub Profile</a></p>
-                    </div>
-                    <div id="gitProjects" data-parent="#githubtab" aria-expanded="false" aria-controls="githubtab">
-                      <button class="btn btn-outline-secondary mt-3 ml-5" data-bs-toggle="collapse"
-                        data-bs-target="#githubProInnerTab" id="btn-Git-Pro" type="button"> GitHub
-                        Projects & FastTrack Assignments/Assessments</button>
-                    </div>
-                  </div>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-vertical mt-3" id="githubtab" data-bs-parent="#jumbotron-slide">
+                <div class="card card-body" id="github" style="width: 300px; height: auto;">
+
+                </div>
+                <div id="gitProjects" data-parent="#githubtab" aria-expanded="false" aria-controls="githubtab">
+                  <button class="btn btn-outline-secondary mt-3 ml-5" data-bs-toggle="collapse"
+                    data-bs-target="#githubProInnerTab" id="btn-Git-Pro" type="button"> GitHub
+                    Projects & FastTrack Assignments/Assessments</button>
                 </div>
               </div>
             </div>
-            <!--</div> -->
 
           </div>
         </div>
@@ -86,31 +79,7 @@
 
     <div class="row collapse mt-4 mb-4 bg-light border rounded-3" id="githubProInnerTab" aria-expanded="false"
       data-bs-parent="#gitProjects">
-      <!--
-      <div class="accordionA mt-3">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingA">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFirst" aria-expanded="true" aria-controls="collapseFirst">
-              React Project - Nucamp (In Progress)
-            </button>
-          </h2>
-          <div id="collapseFirst" class="accordion-collapse collapse show" aria-labelledby="headingA"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong>This is the react version of the nucamp site for Nucamp bootcamp. </strong> Built the UI using
-              Reactstrap for incorporating bootstrap UI classes, functional react components and
-              useState to change state of components dynamically.
-              <br />
-              <br />
-              Link - <a href="https://github.com/rhundal/nucamp-react"> View on Github </a>
-              Link - <a href="https://github.com/rhundal/nucamp-react"> Live </a>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      -->
       <div class="accordionB mt-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingB">
@@ -164,82 +133,6 @@
           </div>
         </div>
       </div>
-      <!--
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingD">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFourth" aria-expanded="true" aria-controls="collapseFourth">
-              FastTrack Assignment - Fibonacci and Fizzbuzz
-            </button>
-          </h2>
-          <div id="collapseFourth" class="accordion-collapse collapse show" aria-labelledby="headingD"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Fibonacci and Fizzbuzz </strong>
-              <br />
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingE">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFifth" aria-expanded="true" aria-controls="collapseFifth">
-              FastTrack Assignment - Rationals
-            </button>
-          </h2>
-          <div id="collapseFifth" class="accordion-collapse collapse show" aria-labelledby="headingE"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Rationals </strong>
-              <br />
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingF">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseSixth" aria-expanded="true" aria-controls="collapseSixth">
-              FastTrack Assignment - Schema Design
-            </button>
-          </h2>
-          <div id="collapseSixth" class="accordion-collapse collapse show" aria-labelledby="headingF"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Schema Design </strong>
-              <br />
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingG">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseSeventh" aria-expanded="true" aria-controls="collapseSeventh">
-              FastTrack Assignment - Collections
-            </button>
-          </h2>
-          <div id="collapseSeventh" class="accordion-collapse collapse show" aria-labelledby="headingG"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Collections </strong>
-              <br />
-
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
 
       <div class="accordionC mt-3 mb-2">
         <div class="accordion-item">
@@ -252,7 +145,7 @@
           <div id="collapseEighth" class="accordion-collapse collapse show" aria-labelledby="headingH"
             data-bs-parent="#gitProjects">
             <div class="accordion-body mt-2">
-              <strong> Implementing a small RESTful API </strong> that simulates basic backend functionality for a quiz
+              <strong> Implemented a small RESTful API </strong> that simulates basic backend functionality for a quiz
               application. Implemented 6 endpoints to perform CRUD operations
               for the application using JPA to generate db classes, spring boot and 3 layer architecture to address
               separation of concern issues.
@@ -282,61 +175,7 @@
           </div>
         </div>
       </div>
-      <!--
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingH">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseNinth" aria-expanded="true" aria-controls="collapseNinth">
-              FastTrack Assignment - Primer (JavaScript)
-            </button>
-          </h2>
-          <div id="collapseNinth" class="accordion-collapse collapse show" aria-labelledby="headingH"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Primer (JavaScript) </strong>
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingI">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTenth" aria-expanded="true" aria-controls="collapseTenth">
-              FastTrack Assignment - Declarative (JavaScript)
-            </button>
-          </h2>
-          <div id="collapseTenth" class="accordion-collapse collapse show" aria-labelledby="headingI"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Declarative (JavaScript) </strong>
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordionC mt-3 mb-4">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingJ">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseEleventh" aria-expanded="true" aria-controls="collapseEleventh">
-              FastTrack Assignment - Quizler (JavaScript)
-            </button>
-          </h2>
-          <div id="collapseEleventh" class="accordion-collapse collapse show" aria-labelledby="headingJ"
-            data-bs-parent="#gitProjects">
-            <div class="accordion-body mt-2">
-              <strong> Description of Quizler (JavaScript) </strong>
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
--->
     </div>
 
     <!-- Resume -->
@@ -366,10 +205,38 @@
       </div>
     </div>
 
+    <div class=" container footerDiv">
+
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <button type="button" class="btn btn-link"
+            onclick="window.open('https://www.linkedin.com/in/hundalr/', '_blank')">LinkedIn</button>
+        </div>
+
+        <div class=" col d-flex justify-content-center">
+
+          <button type="button" class="btn btn-link" onclick="window.open('https://github.com/rhundal', '_blank')">
+            GitHub</button>
+
+        </div>
+
+        <div class="col d-flex justify-content-center">
+
+          <button type="button" class="btn btn-link">Email</button>
+
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col d-flex justify-content-center styleRight">
+          @2023 - Rajdeep Hundal
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+      </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -412,28 +279,41 @@
 						</div>
 					</div>`;
 
+
         githubAvatar.innerHTML =
           `
-            <div class="rounded float-start float-sm-end d-flex img-thumbnail mt-3 mb-3 p-2 bg-photo-border ghAvatar">
-							<img width="200"
-                height="auto" alt="My my-photo thumbnail" src="${data.avatar_url}">
-						</div>
-          `;
+          <div class="rounded d-flex float-md-end align-items-center image-fluid img-thumbnail mt-4 mb-3 p-2 ml-3 bg-photo-border">
+            
+            <img width="230"
+              height="auto" alt="my-photo thumbnail" src="${data.avatar_url}">
+          </div>
+        `;
 
       }
 
       // Call the GitHub API
-      fetch('https://api.github.com/users/rhundal').then(function (response) {
-        if (response.ok) {
-          return response.json();
-        }
-        throw response;
-      }).then(function (data) {
-        console.log(data);
-        render(data);
-      }).catch(function (error) {
-        console.warn(error);
-      });
+      // fetch('https://api.github.com/users/rhundal')
+      //   .then(function (response) {
+      //     if (response.ok) {
+      //       return response.json();
+      //     }
+      //     throw response;
+      //   }).then(function (data) {
+      //     console.log(data);
+      //     render(data);
+      //   }).catch(function (error) {
+      //     console.warn(error);
+      //   });
+
+
+      // Call the GitHub API
+      fetch('https://api.github.com/users/rhundal')
+        .then(response => response.json())
+        .then(data => {
+          render(data);
+        })
+        .catch(error => console.log(error))
+
 
     </script>
 

@@ -1,15 +1,19 @@
 body {
 
   background-color: #a3b5b4;
+  /*   background-color: #a3b5b4;
+*/
 
 }
 
 .gh-avatar {
   background-color: #8cb7b4;
+  margin-left: 12rem;
 }
 
 .gh-details {
-  background-color: #a3b5b4;
+  background-color: whitesmoke;
+
 }
 
 header {
@@ -42,14 +46,14 @@ h2 {
 }
 
 .h2Animate:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px);
 }
 
 /*   background-color: #20B2AA; */
 
 .bg-photo-border {
 
-  border-color: #8cb7b4;
+  border-color: white;
   border-width: 0.5rem;
 }
 
@@ -59,15 +63,6 @@ h2 {
   /*height: auto; */
 }
 
-
-.topContainer {
-
-  margin-top: 5px;
-  position: relative;
-  background-color: #8cb7b4;
-  margin-block: 1rem;
-  padding: 1rem;
-}
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 500px) {
@@ -80,13 +75,27 @@ h2 {
 }
 
 
+
+/*
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+}*/
 
 #adjustWidth {
 
   width: auto;
+}
+
+.footerDiv {
+
+  margin-top: 110px;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+.styleRight {
+
+  color: #717575;
 }

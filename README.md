@@ -1,3 +1,3 @@
 # portfolio
-My Responsive Portfolio
-~ Developed using HTML5, CSS3, JavaScript and Bootstrap 5.2.3
+My Portfolio
+~ Developed using JavaScript and Bootstrap 

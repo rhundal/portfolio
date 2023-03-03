@@ -40,7 +40,8 @@
               -->
             </div>
 
-            <div id="githubAvatar">
+            <div id="githubAvatar"
+              class="rounded d-flex float-md-end align-items-center image-fluid img-thumbnail mt-4 mb-3 p-2 ml-3 bg-photo-border">
               <!-- placeholder / dont delete this section-->
             </div>
 
@@ -48,12 +49,15 @@
 
             <!--<div style="min-height: 90px;"> -->
             <div id="abouttab" class="collapse collapse-vertical mt-4" data-bs-parent="#jumbotron-slide">
-              <div class="card card-body col-4 float-start" style="min-width: 300px; height: auto;   background-color: whitesmoke; border-color: white;
+              <div class="card card-body col-4 float-start w-75" style="min-width: 400px; min-height: auto; background-color: whitesmoke; border-color: white;
                 border-width: 0.5rem;">
                 <!--style="min-width: 320px; max-width: 700px; height: auto;" max-width: 600px;-->
-                An enthusiastic and determined full-stack developer, I am a recent graduate of FastTrack Java
-                Developer program with Cook Systems. I bring 5+ years IT experience from working in the e-learning,
-                healthcare and gaming industries.
+                An enthusiastic and determined developer, I am a recent graduate of FastTrack Java
+                Developer program with Cook Systems. I am also currently enrolled in the Full Stack Web + Mobile
+                Development program with Nucamp and expect to graduate in April 2023.
+                I bring 5+ years IT experience from working in the e-learning, healthcare and gaming industries. I am
+                starting my software development journey again after a decade of
+                break and my goal is to stay consistent.
               </div>
             </div>
 
@@ -284,11 +288,13 @@
           $("#githubProInnerTab").show();
 
         });
+        let githubAvatar = document.querySelector('#githubAvatar');
 
       });
 
+      var img = new Image(250, 250);
       let github = document.querySelector('#github');
-      let githubAvatar = document.querySelector('#githubAvatar');
+      githubAvatar.appendChild(img);
 
       function render(data) {
         github.innerHTML =
@@ -305,14 +311,17 @@
 					</div>`;
 
 
-        githubAvatar.innerHTML =
-          `
-          <div class="rounded d-flex float-md-end align-items-center image-fluid img-thumbnail mt-4 mb-3 p-2 ml-3 bg-photo-border">
-            
-            <img width="230"
-              height="auto" alt="my-photo thumbnail" src="${data.avatar_url}">
-          </div>
-        `;
+        img.src = `${data.avatar_url}`;
+
+
+        // githubAvatar.innerHTML =
+        //   `
+        //     <div class="rounded d-flex float-md-end align-items-center image-fluid img-thumbnail mt-4 mb-3 p-2 ml-3 bg-photo-border">
+
+        //       <img width="230"
+        //         height="auto" alt="my-photo thumbnail" src="${data.avatar_url}" />
+        //     </div>
+        //   `;
 
       }
 

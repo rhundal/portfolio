@@ -99,3 +99,10 @@ img {
 
   color: #717575;
 }
+
+.applyScroll {
+
+  height: 750px;
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+}
